@@ -1,0 +1,38 @@
+// ----------------------------------------------------------------------------
+// -                        Open3D: www.open3d.org                            -
+// ----------------------------------------------------------------------------
+// Copyright (c) 2018-2023 www.open3d.org
+// SPDX-License-Identifier: MIT
+// ----------------------------------------------------------------------------
+
+#pragma once
+
+// This C/C++ header is compatible with ISPC.
+// Variadic macros, i.e. ellipsis (...) and __VA_ARGS__ are also supported.
+#include "open3d/utility/Preprocessor.h"
+
+/// CHAR_BIT
+///
+/// The number of bits per byte.
+#define CHAR_BIT 8
+
+/// Enable C/C++ fixed size integer types.
+typedef uint8 uint8_t;
+typedef int8 int8_t;
+typedef uint16 uint16_t;
+typedef int16 int16_t;
+typedef uint32 uint32_t;
+typedef int32 int32_t;
+typedef uint64 uint64_t;
+typedef int64 int64_t;
+
+/// OPEN3D_ENSURE_EXPORTED(StructOrEnum)
+///
+/// Ensures that the provided struct or enum is exported to the C++ side.
+///
+/// This is useful if no other exported function directly or indirectly
+/// references the struct or enum via its arguments.
+#define OPEN3D_ENSURE_EXPORTED(StructOrEnum) \
+    export void OPEN3D_CONCAT(               \
+            DummyToEnsureExported_,          \
+            OPEN3D_CONCAT(StructOrEnum, _))(uniform StructOrEnum * uniform) {}
