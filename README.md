@@ -108,7 +108,7 @@ make python-package
 make pip-package
 
 
-wandb tensorboard ipdb gym tqdm rich opencv_python pytorch3d pyparsing pytorch_lightning addict yapf h5py sorcery  pynvml torchdata==0.5.1
+wandb tensorboard ipdb gym tqdm rich opencv_python pytorch3d pyparsing pytorch_lightning addict yapf h5py sorcery  pynvml torchdata==0.5.1 einops
 
 pointnet_ops
 spconv: pip install spconv-cuxxx (https://github.com/traveller59/spconv)
