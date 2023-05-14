@@ -79,6 +79,7 @@ cmake \
 ..                         
 ```
 
+```
 cmake \
 -DPython3_ROOT="~/miniconda3/envs/rlgpu/bin" \
 -DWITH_OPENMP=ON \
@@ -91,10 +92,15 @@ cmake \
 -DCMAKE_CUDA_COMPILER=$(which nvcc) \
 -DCMAKE_INSTALL_PREFIX="/mnt/data/GAPartNet_env/open3d_install" \
 ..
+```
 
+```
 make -j$(nproc)
+```
 
+```
 make install2
+```
 
 ```
 # Activate the virtualenv first
@@ -121,6 +127,7 @@ install this repo
 cd pointnet2_ops_lib
 python setup.py install
 ```
-```
 
+```
 spconv: pip install spconv-cuxxx (https://github.com/traveller59/spconv)
+```
