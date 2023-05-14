@@ -119,7 +119,6 @@ make pip-package
 
 
 #### pointnet_ops
-```
 pointnet_ops: https://github.com/erikwijmans/Pointnet2_PyTorch/tree/master/pointnet2_ops_lib
 
 install this repo
