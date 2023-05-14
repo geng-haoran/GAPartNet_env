@@ -116,10 +116,10 @@ make pip-package
 ```
 
 ### Step 3: install other packages
-```
-pip install wandb tensorboard ipdb gym tqdm rich opencv_python pytorch3d pyparsing pytorch_lightning addict yapf h5py sorcery  pynvml torchdata==0.5.1 einops
-```
 
+
+#### pointnet_ops
+```
 pointnet_ops: https://github.com/erikwijmans/Pointnet2_PyTorch/tree/master/pointnet2_ops_lib
 
 install this repo
@@ -128,6 +128,12 @@ cd pointnet2_ops_lib
 python setup.py install
 ```
 
+#### spconv
 ```
 spconv: pip install spconv-cuxxx (https://github.com/traveller59/spconv)
+```
+
+#### pip
+```
+pip install wandb tensorboard ipdb gym tqdm rich opencv_python pytorch3d pyparsing pytorch_lightning addict yapf h5py sorcery  pynvml torchdata==0.5.1 einops
 ```
