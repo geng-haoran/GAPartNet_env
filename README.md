@@ -52,17 +52,6 @@ sudo aptitude install -y clang libc++-dev libc++abi-dev cmake ninja-build
 open3d with pytorch extension (need to build from source)
 
 
-
-pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
-
-pip install torchdata==0.3.0
-
-isaacgym 4
-
-pointnet_ops
-
-Open3d
-
 cmake command:
 ```
 cmake \
