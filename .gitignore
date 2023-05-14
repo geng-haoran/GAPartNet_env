@@ -1,6 +1,8 @@
 cmake*
 llvm*
 *.gz
+*.run
+Pointnet2_PyTorch/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

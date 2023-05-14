@@ -94,8 +94,9 @@ cmake \
 
 make -j$(nproc)
 
-make install
+make install2
 
+```
 # Activate the virtualenv first
 # Install pip package in the current python environment
 make install-pip-package
@@ -106,9 +107,20 @@ make python-package
 # Create pip wheel in build/lib
 # This creates a .whl file that you can install manually.
 make pip-package
+```
 
+### Step 3: install other packages
+```
+pip install wandb tensorboard ipdb gym tqdm rich opencv_python pytorch3d pyparsing pytorch_lightning addict yapf h5py sorcery  pynvml torchdata==0.5.1 einops
+```
 
-wandb tensorboard ipdb gym tqdm rich opencv_python pytorch3d pyparsing pytorch_lightning addict yapf h5py sorcery  pynvml torchdata==0.5.1 einops
+pointnet_ops: https://github.com/erikwijmans/Pointnet2_PyTorch/tree/master/pointnet2_ops_lib
 
-pointnet_ops
+install this repo
+```
+cd pointnet2_ops_lib
+python setup.py install
+```
+```
+
 spconv: pip install spconv-cuxxx (https://github.com/traveller59/spconv)
