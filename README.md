@@ -50,7 +50,19 @@ sudo aptitude install -y clang libc++-dev libc++abi-dev cmake ninja-build
 ```
 
 open3d with pytorch extension (need to build from source)
-
+install repo
+```
+git clone https://github.com/isl-org/Open3D
+```
+install dependences
+```
+util/install_deps_ubuntu.sh
+```
+build:
+```
+mkdir build
+cd build
+```
 
 cmake command:
 ```
@@ -68,6 +80,7 @@ cmake \
 ..                         
 ```
 
+An example of tested cmake command:
 ```
 cmake \
 -DPython3_ROOT="~/miniconda3/envs/rlgpu/bin" \
@@ -108,12 +121,32 @@ make pip-package
 
 
 #### pointnet_ops
-pointnet_ops: https://github.com/erikwijmans/Pointnet2_PyTorch/tree/master/pointnet2_ops_lib
+
+https://github.com/erikwijmans/Pointnet2_PyTorch/tree/master/pointnet2_ops_lib
+
+clone repo
+```
+git clone git@github.com:erikwijmans/Pointnet2_PyTorch.git
+```
 
 install this repo
 ```
 cd pointnet2_ops_lib
 python setup.py install
+```
+#### epic_ops
+
+https://github.com/geng-haoran/epic_ops
+
+clone repo
+```
+git clone git@github.com:geng-haoran/epic_ops.git
+```
+
+install this repo
+```
+cd epic_ops
+python setup.py develop
 ```
 
 #### spconv

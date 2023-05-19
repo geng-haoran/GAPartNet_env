@@ -2,9 +2,10 @@ cmake*
 llvm*
 *.gz
 *.run
-Pointnet2_PyTorch/
-Open3D/
-epic_ops/
+build/
+# Pointnet2_PyTorch/
+# Open3D/
+# epic_ops/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
