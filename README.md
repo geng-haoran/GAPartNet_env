@@ -102,7 +102,7 @@ make -j$(nproc)
 ```
 
 ```
-make install2
+make install
 ```
 
 ```
