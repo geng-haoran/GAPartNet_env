@@ -65,10 +65,10 @@ mkdir build
 cd build
 ```
 
-cmake command (remember to replace YOUR_PATH_TO_INSTALL_FOLDER & YOUR_PATH_TO_ANACONDA_OR_MINICONDA as your real paths):
+cmake command (remember to replace YOUR_PATH_TO_INSTALL_FOLDER & YOUR_PATH_TO_ANACONDA_OR_MINICONDA & YOUR_CONDA_ENV_NAME as your real paths or names):
 ```
 cmake \
--DPython3_ROOT="/YOUR_PATH_TO_ANACONDA_OR_MINICONDA/envs/pg38/bin/" \
+-DPython3_ROOT="/YOUR_PATH_TO_ANACONDA_OR_MINICONDA/envs/YOUR_CONDA_ENV_NAME/bin/" \
 -DWITH_OPENMP=ON \
 -DWITH_SIMD=ON \
 -DBUILD_PYTORCH_OPS=ON \
