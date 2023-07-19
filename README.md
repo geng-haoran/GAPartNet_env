@@ -15,6 +15,7 @@ torch >= 1.11:
 e.g. pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 
 ### Step 2: cmake and open3d
+- Notice: here you may need su/sudo
 cmake >= 3.20: following the instruction [here](https://cmake.org/install/)
 
 Some possible problems here:
@@ -64,7 +65,7 @@ mkdir build
 cd build
 ```
 
-cmake command:
+cmake command (remember to replace YOUR_PATH_TO_INSTALL_FOLDER & YOUR_PATH_TO_ANACONDA_OR_MINICONDA as your real paths):
 ```
 cmake \
 -DPython3_ROOT="/YOUR_PATH_TO_ANACONDA_OR_MINICONDA/envs/pg38/bin/" \
