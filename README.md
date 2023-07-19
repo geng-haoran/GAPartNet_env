@@ -107,7 +107,8 @@ make install
 
 ```
 # Activate the virtualenv first
-# Install pip package in the current python environment
+# Install pip package in the current python environment (recommended)
+pip install jupyter_packaging jupyterlab
 make install-pip-package
 
 # Create Python package in build/lib
