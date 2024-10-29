@@ -16,7 +16,9 @@ e.g. pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.
 
 ### Step 2: cmake and open3d
 - Notice: here you may need su/sudo
-cmake >= 3.20: following the instruction [here](https://cmake.org/install/)
+cmake >= 3.24: following the instruction [here](https://cmake.org/install/)
+
+if your cmake version is lower than 3.24: follow [this](https://askubuntu.com/questions/829310/how-to-upgrade-cmake-in-ubuntu)
 
 Some possible problems here:
 1. Could not find OpenSSL
